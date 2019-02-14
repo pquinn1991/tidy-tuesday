@@ -80,7 +80,7 @@ budget_candlestick <- rd_deltas %>%
           axis.text = element_text(size = 10, face = "italic"), 
           axis.text.x = element_text(size = 10, face = "bold.italic"), 
           panel.grid.minor = element_blank()) + 
-    labs(x = "", y = "", title = "Annual spending on R&D")
+    labs(x = "", y = "", title = "Annual spending on R&D ($B)")
 
 change_candlestick <- rd_deltas %>% 
   ggplot(aes(x = type, y = changePct, color = type)) + 
