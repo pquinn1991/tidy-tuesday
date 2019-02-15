@@ -108,4 +108,16 @@ grid.arrange(budget_candlestick,
 
 
 
-
+rd_deltas %>% 
+  ggplot(aes(x = year, y = rd_budget, color = type)) + 
+  geom_line(size = 1) + 
+  scale_y_continuous(labels = dollar_format(scale = 1/1000000000)) + 
+  theme_minimal() + 
+  theme(legend.title = element_blank(),
+        plot.title = element_text(face = "bold.italic", size = 16), 
+        axis.title = element_text(face = "bold"), 
+        axis.text = element_text(size = 10, face = "italic"), 
+        axis.text.x = element_text(size = 10, face = "bold.italic"), 
+        panel.grid.minor = element_blank()) + 
+  labs(x = "", y = "Annual spending on R&D ($B)", title = "Climate and Energy R&D are way behind", subtitle = "...and they aren't catching up any time soon.") + 
+  guides(colour = guide_legend(reverse=T))
