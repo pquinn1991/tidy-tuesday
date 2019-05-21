@@ -28,7 +28,7 @@ my_theme <- function() {
     theme(plot.subtitle    = element_text(color=color.text, size=10, face = "italic")) + 
     theme(axis.title.x     = element_blank()) +
     theme(axis.title.y     = element_text(size = 14, face = "bold")) +
-    theme(axis.text.x      = element_text(size = 11, face = "bold")) +
+    theme(axis.text.x      = element_text(size = 9, face = "bold")) +
     theme(axis.text.y      = element_text(size = 9)) +
     theme(strip.text       = element_text(face = "bold")) +
     
