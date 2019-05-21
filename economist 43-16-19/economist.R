@@ -14,4 +14,4 @@ women_research %>%
   guides(fill = guide_legend(), color=guide_legend(override.aes=list(fill=NA))) + 
   my_theme() + 
   labs(title = "Still a man's world...", subtitle = "Women among researchers with papers published 2011-2015, percent of total. \nHealth sciences are closest to gender parity across all countries, but only in Portugal \nand Brazil do they cross the 50% threshold.\n\n") + 
-  scale_fill_brewer(palette="Dark2")
+  scale_fill_brewer(palette="Set2")
