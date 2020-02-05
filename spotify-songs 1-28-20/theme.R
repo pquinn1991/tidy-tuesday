@@ -33,7 +33,8 @@ my_theme <- function() {
     theme(axis.text.x      = element_text(size = 10, family = "Courier")) +
     theme(axis.text.y      = element_text(size = 10, family = "Courier")) +
     theme(strip.text       = element_text(face = "bold")) +
+    theme(plot.caption = element_text(color = "grey70", size = 10)) + 
     
     # Plot margins
-    theme(plot.margin = unit(c(.4, 0.5, 0.8, 0.4), "cm"))
+    theme(plot.margin = unit(c(.4, 0.5, 0.4, 0.4), "cm"))
 }
